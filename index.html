@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Playfair Cipher</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+  <div class="wrapper">
+   <h1>Playfair Cipher</h1>
+    <div class="inner">
+	   <div class="encrypt-form form">
+        <h2>Encryption</h2>
+        <label for="key">khóa:</label>
+        <input type="text" id="key" name="key" required />
+
+        <label for="plaintext">nội dung cần mã hóa:</label>
+        <textarea id="plaintext" name="plaintext" required></textarea>
+        <div class="actions">
+          <div class="action-left">
+            <button id="encode-btn" onclick="encode()">mã hóa</button>
+          </div>
+          <button style="margin-right: 0" id="reset-btn">reset</button>
+        </div>
+        <label for="ciphertext">Ciphertext:</label>
+        <textarea id="ciphertext" name="ciphertext"></textarea>
+      </div>
+	
+      <div class="decrypt-form form">
+        <h2>Decryption</h2>
+        <label for="key-decrypt">khóa:</label>
+        <input type="text" id="key-decrypt" name="key-decrypt" required />
+
+        <label for="ciphertext-decrypt">nội dung đã được mã hóa:</label>
+        <textarea id="ciphertext-decrypt" name="ciphertext-decrypt" required></textarea>
+        <div class="actions">
+          <div class="action-left">
+            <button id="decode-btn" onclick="decode()">Decode</button>
+          </div>
+          <button style="margin-right: 0" id="reset-decrypt-btn">reset</button>
+        </div>
+        <label for="plaintext-decrypt">nội dung sau khi giải mã:</label>
+        <textarea id="plaintext-decrypt" name="plaintext-decrypt"></textarea>
+      </div>
+	</div>
+  
+  </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
